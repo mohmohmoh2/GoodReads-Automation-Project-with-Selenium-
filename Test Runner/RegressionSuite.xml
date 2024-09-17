@@ -4,7 +4,8 @@
         <classes>
 <!--            <class name="tests.login.TC01_Login"/>-->
             <class name="tests.login.TC01_Login"/>
-            <class name="tests.community.tc02_Ask_Author"/>
+            <class name="tests.community.TC02_Valid_Ask_Author"/>
+            <class name="tests.community.TC03_invalid_Ask_author"/>
         </classes>
     </test>
 </suite>

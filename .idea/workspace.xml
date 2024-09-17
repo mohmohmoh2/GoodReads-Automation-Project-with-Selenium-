@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e8c4bc-43b7-45c4-b2b7-f26948698222" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/community/TC_3_invalid_Ask_author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test Runner/RegressionSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Test Runner/RegressionSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/P02_Community.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/P02_Community.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/community/tc02_Ask_Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/community/TC02_Ask_Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestData/information.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestData/information.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +44,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/Users/Mohamed Abdullah/Desktop/GoodReads Automation/Test Runner/RegressionSuite.xml.executor": "Run",
     "TestNG.TC01_Login.testLogin.executor": "Run",
+    "TestNG.TC02_Ask_Author.executor": "Run",
+    "TestNG.TC_3_invalid_Ask_author.executor": "Run",
     "TestNG.tc02_Ask_Author.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Mohamed Abdullah/Desktop/GoodReads Automation",
+    "last_opened_file_path": "C:/Users/Mohamed Abdullah/Desktop/GoodReads-Automation-Project-with-Selenium-",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.C:/Users/Mohamed Abdullah/Desktop/GoodReads Automation/Test Runner/RegressionSuite.xml">
+  <component name="RunManager">
     <configuration name="C:/Users/Mohamed Abdullah/Desktop/GoodReads Automation/Test Runner/RegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GoodReads" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Test Runner/RegressionSuite.xml" />

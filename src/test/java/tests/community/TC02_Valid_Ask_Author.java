@@ -4,6 +4,7 @@ import DriverSettings.DriverManager;
 import Pages.P01_Login;
 import Pages.P02_Community;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ import static utilities.DataUtils.getJsonData;
 import static utilities.DataUtils.getPropertyValue;
 
 
-public class tc02_Ask_Author {
+public class TC02_Valid_Ask_Author {
 
     @BeforeMethod
     public void setUp() throws IOException {
@@ -35,18 +36,21 @@ public class tc02_Ask_Author {
                 .enterPassword(getJsonData("login", "password"))
                 .clickLogin();
 
-        new P02_Community(getDriver())
-                .openCommunityDropdown()
+        P02_Community askAuthor = new P02_Community(getDriver());
+        askAuthor.openCommunityDropdown()
                 .clickAskAuthor()
                 .clickAsk()
-                .enterQuestion(getJsonData("information", "ask"))
+                .enterQuestion(getJsonData("information", "validAsk"))
                 .clickSubmit();
+
+        // TODO: Add an assertion
+        Assert.assertTrue(askAuthor.assertDialog());
 
     }
 
     @AfterMethod
     public void tearDown() {
         // TODO: Close the browser
-        // quitDriver();
+        //quitDriver();
     }
 }

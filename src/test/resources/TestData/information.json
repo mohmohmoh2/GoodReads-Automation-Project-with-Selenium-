@@ -1,5 +1,6 @@
 {
   "fName": "fTest",
   "lName": "lTest",
-  "ask": "how are the book introduction?"
+  "validAsk": "how are the book introduction?",
+  "invalidAsk": "how are the book introduction"
 }

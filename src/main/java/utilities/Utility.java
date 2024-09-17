@@ -26,6 +26,17 @@ public class Utility {
         driver.findElement(locator).click();
     }
 
+    public static boolean isDesplayed(WebDriver driver, By locator) {
+        final String text = getText(driver, locator);
+        if (text.isEmpty())
+            return false;
+        else if (text.contains("Sorry")) {
+            return false;
+        }else {
+            return true;
+        }
+    }
+
     public static void enterData(WebDriver driver, By locator, String data) {
         new WebDriverWait(driver, Duration.ofSeconds(5))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));

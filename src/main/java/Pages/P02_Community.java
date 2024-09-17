@@ -13,7 +13,7 @@ public class P02_Community {
     private final  By askbutton = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/div[2]/div[1]/div/div/div[2]/div[3]/a");
     private final  By askInput = By.id("qaTextArea");
     private final  By submitButton = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/div[2]/div[2]/form/div[1]/div[2]/button");
-
+    private final By desplayedDialog = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/div");
     private final WebDriver driver;
 
     // TODO: Create a constructor
@@ -48,6 +48,13 @@ public class P02_Community {
     // TODO: Click on the submit button
     public void clickSubmit() {
         clickingOnElement(driver, submitButton);
+    }
+
+    // TODO: Assert the dialog is displayed
+    public boolean assertDialog() {
+        // Check if the item is displayed
+
+        return isDesplayed(driver, desplayedDialog);
     }
 
 

@@ -10,10 +10,10 @@ public class P02_Community {
     // TODO: Define the locators
     private  final  By communityButton = By.xpath("//*[@id=\"bodycontainer\"]/div/div[2]/div/header/div[3]/div/nav/ul/li[4]/div/a");
     private final  By askAuthorButton = By.xpath("//*[@id=\"bodycontainer\"]/div/div[2]/div/header/div[3]/div/nav/ul/li[4]/div/div/ul/li[4]/a");
-    private final  By askbutton = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/div[2]/div[1]/div/div/div[2]/div[3]/a");
+    private final  By askButton = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/div[2]/div[1]/div/div/div[2]/div[3]/a");
     private final  By askInput = By.id("qaTextArea");
     private final  By submitButton = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/div[2]/div[2]/form/div[1]/div[2]/button");
-    private final By desplayedDialog = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/div");
+    private final By displayedDialog = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/div");
     private final WebDriver driver;
 
     // TODO: Create a constructor
@@ -35,7 +35,7 @@ public class P02_Community {
 
     // TODO: Click on the Ask button
     public P02_Community clickAsk() {
-        clickingOnElement(driver, askbutton);
+        clickingOnElement(driver, askButton);
         return this;
     }
 
@@ -54,7 +54,7 @@ public class P02_Community {
     public boolean assertDialog() {
         // Check if the item is displayed
 
-        return isDesplayed(driver, desplayedDialog);
+        return isDesplayed(driver, displayedDialog);
     }
 
 

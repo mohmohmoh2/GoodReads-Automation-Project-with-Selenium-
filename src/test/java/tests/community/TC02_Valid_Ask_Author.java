@@ -21,8 +21,7 @@ public class TC02_Valid_Ask_Author {
 
     @BeforeMethod
     public void setUp() throws IOException {
-        String driverType = getPropertyValue("config", "driverType");
-        WebDriver driver = DriverManager.createDriver(driverType);
+        WebDriver driver = createDriver(getPropertyValue("config", "driverType"));
         setDriver(driver);
         getDriver().get(getPropertyValue("config", "LOGIN_PAGE"));
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -51,6 +50,6 @@ public class TC02_Valid_Ask_Author {
     @AfterMethod
     public void tearDown() {
         // TODO: Close the browser
-        //quitDriver();
+        quitDriver();
     }
 }

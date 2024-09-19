@@ -3,6 +3,8 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.Objects;
+
 import static utilities.Utility.*;
 
 
@@ -38,6 +40,7 @@ public class P01_Login {
 
     // TODO: Create a method to assert the login
     public boolean assertLoginTc(String expectedUrl) {
-        return driver.getCurrentUrl().equals(expectedUrl);
+        return Objects.equals(driver.getCurrentUrl(), expectedUrl);
+
     }
 }

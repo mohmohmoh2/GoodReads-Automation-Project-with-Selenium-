@@ -2,10 +2,16 @@
 <suite name="Regression Suite">
     <test name="Regression Test">
         <classes>
-<!--            <class name="tests.login.TC01_Login"/>-->
-            <class name="tests.login.TC01_Login"/>
-            <class name="tests.community.TC02_Valid_Ask_Author"/>
-            <class name="tests.community.TC03_invalid_Ask_author"/>
+            <class name="tests.login.TC01_Valid_Login"/>
+            <class name="tests.login.TC02_IncorrectEmail"/>
+            <class name="tests.login.TC03_IncorrectPassword"/>
+            <class name="tests.community.TC04_Valid_Ask_Author"/>
+            <class name="tests.community.TC05_invalid_Ask_author"/>
+            <class name="tests.community.TC06_Join_popular_group"/>
+            <class name="tests.community.TC07_LikeQuote"/>
+            <class name="tests.community.TC08_UnlikeQuote"/>
+            <class name="tests.books.TC09_AddingBookToCurrentlyReading"/>
+            <class name="tests.books.TC10_RemovingBookToCurrentlyReading"/>
         </classes>
     </test>
 </suite>

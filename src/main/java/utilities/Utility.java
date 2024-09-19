@@ -26,15 +26,22 @@ public class Utility {
         driver.findElement(locator).click();
     }
 
-    public static boolean isDesplayed(WebDriver driver, By locator) {
+    public static boolean checkElementExist(WebDriver driver, By locator) {
         final String text = getText(driver, locator);
-        if (text.isEmpty())
-            return false;
-        else if (text.contains("Sorry")) {
-            return false;
-        }else {
+        if (text.contains("View quote")) {
+            return true;
+        } else if (text.contains("Successfully")) {
+            return true;
+        } else if (text.contains("submitted")) {
+            return true;
+        } else if (text.contains("successfully")) {
+            return true;
+        } else if (text.contains("Currently Reading")) {
+            return true;
+        } else if (text.contains("Want to Read")) {
             return true;
         }
+        return false;
     }
 
     public static void enterData(WebDriver driver, By locator, String data) {
@@ -61,6 +68,12 @@ public class Utility {
 
     public static WebElement findWebElement(WebDriver driver, By locator) {
         return driver.findElement(locator);
+    }
+
+    public static Void hoverOverElement(WebDriver driver, By locator) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(findWebElement(driver, locator)).perform();
+        return null;
     }
 
     public static void selectingFromDropDown(WebDriver driver, By locator, String option) {

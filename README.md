@@ -10,4 +10,4 @@ Here are some of the key techniques and tools I utilized:
 🧪 TestNG for efficient test management
 🏗 Page Object Model (POM) for clean and structured code
 🚀 GitHub Pipelines for continuous integration and smooth test execution
-Automation is an integral part of enhancing quality and efficiency in software delivery, and this project has been a rewarding step in that journey!
+Automation is integral to enhancing quality and efficiency in software delivery, and this project has been a rewarding step in that journey!

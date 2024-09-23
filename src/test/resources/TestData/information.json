@@ -1,6 +1,7 @@
 {
-  "fName": "fTest",
-  "lName": "lTest",
   "validAsk": "how are the book introduction?",
-  "invalidAsk": "how are the book introduction"
+  "invalidAsk": "how are the book introduction",
+  "bookTopic": "book",
+  "topic": "what is the best book in science?",
+  "comment": "suggest me a book in science"
 }

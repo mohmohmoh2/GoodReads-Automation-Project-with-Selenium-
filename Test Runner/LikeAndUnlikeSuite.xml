@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="Like And Unlike Suite">
+    <test name="Like And Unlike Suite">
+        <classes>
+            <class name="tests.community.TC07_LikeQuote"/>
+            <class name="tests.community.TC08_UnlikeQuote"/>
+        </classes>
+    </test>
+</suite>

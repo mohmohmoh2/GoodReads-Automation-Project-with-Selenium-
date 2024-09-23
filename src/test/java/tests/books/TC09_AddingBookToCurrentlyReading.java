@@ -12,8 +12,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.time.Duration;
 
-import static DriverSettings.DriverManager.getDriver;
-import static DriverSettings.DriverManager.setDriver;
+import static DriverSettings.DriverManager.*;
 import static utilities.DataUtils.getJsonData;
 import static utilities.DataUtils.getPropertyValue;
 
@@ -46,5 +45,6 @@ public class TC09_AddingBookToCurrentlyReading {
 
     @AfterMethod
     public void tearDown() {
+        quitDriver();
     }
 }

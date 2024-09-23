@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e8c4bc-43b7-45c4-b2b7-f26948698222" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/P03_Books.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/books/TC09_AddingBookToCurrentlyReading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/books/TC10_RemovingBookToCurrentlyReading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/community/TC06_Join_popular_group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/community/TC07_LikeQuote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/community/TC08_UnlikeQuote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/login/TC02_IncorrectEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/login/TC03_IncorrectPassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Runner/LikeAndUnlikeSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/community/TC11_AddingNewDiscussionTopic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test Runner/RegressionSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Test Runner/RegressionSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/P01_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/P01_Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/P02_Community.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/P02_Community.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/community/TC02_Valid_Ask_Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/community/TC04_Valid_Ask_Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/community/TC03_invalid_Ask_author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/community/TC05_invalid_Ask_author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/TC01_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/TC01_Valid_Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/books/TC09_AddingBookToCurrentlyReading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/books/TC09_AddingBookToCurrentlyReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/books/TC10_RemovingBookToCurrentlyReading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/books/TC10_RemovingBookToCurrentlyReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestData/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestData/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestData/information.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestData/information.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/TestData/login.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestData/login.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,10 +47,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/Users/Mohamed Abdullah/Desktop/GoodReads Automation/Test Runner/RegressionSuite.xml.executor": "Run",
+    "TestNG.C:/Users/Mohamed Abdullah/Desktop/GoodReads-Automation-Project-with-Selenium-/Test Runner/LikeAndUnlikeSuite.xml.executor": "Run",
     "TestNG.C:/Users/Mohamed Abdullah/Desktop/GoodReads-Automation-Project-with-Selenium-/Test Runner/RegressionSuite.xml.executor": "Run",
     "TestNG.TC01_Login.testLogin.executor": "Run",
     "TestNG.TC01_Valid_Login.executor": "Run",
     "TestNG.TC01_Valid_Login.testLogin (1).executor": "Run",
+    "TestNG.TC01_Valid_Login.testLogin.executor": "Run",
     "TestNG.TC02_Ask_Author.executor": "Run",
     "TestNG.TC02_IncorrectEmail.executor": "Run",
     "TestNG.TC03_IncorrectPassword.executor": "Run",
@@ -71,10 +66,12 @@
     "TestNG.TC09_AddingBookToCurrentlyReading.executor": "Run",
     "TestNG.TC09_AddingBookToCurrentlyReading.testAddingBookToCurrentlyReading.executor": "Run",
     "TestNG.TC10_RemovingBookToCurrentlyReading.executor": "Run",
+    "TestNG.TC11_AddingNewDiscussionTopic.executor": "Run",
     "TestNG.TC8_UnlikeQuote.executor": "Run",
     "TestNG.TC_3_invalid_Ask_author.executor": "Run",
     "TestNG.tc02_Ask_Author.executor": "Run",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Mohamed Abdullah/Desktop/GoodReads-Automation-Project-with-Selenium-",
     "project.structure.last.edited": "Project",
@@ -181,9 +178,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TC01_Valid_Login.testLogin" />
         <item itemvalue="TestNG.TC09_AddingBookToCurrentlyReading.testAddingBookToCurrentlyReading" />
         <item itemvalue="TestNG.TC01_Valid_Login.testLogin (1)" />
-        <item itemvalue="TestNG.TC01_Valid_Login.testLogin" />
         <item itemvalue="TestNG.TC06_Join_popular_group.testJoinPopularGroup" />
         <item itemvalue="TestNG.TC05_invalid_Ask_author.testAskAuthor" />
       </list>

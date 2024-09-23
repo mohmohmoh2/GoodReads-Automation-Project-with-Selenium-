@@ -1,13 +1,17 @@
 package Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.Objects;
 
 import static utilities.Utility.*;
 
 public class P02_Community {
+    private final WebDriver driver;
 
     // TODO: Define the locators
     private  final  By communityButton = By.xpath("//*[@id=\"bodycontainer\"]/div/div[2]/div/header/div[3]/div/nav/ul/li[4]/div/a");
@@ -16,17 +20,25 @@ public class P02_Community {
     private final  By askInput = By.id("qaTextArea");
     private final  By submitButton = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/div[2]/div[2]/form/div[1]/div[2]/button");
     private final By displayedDialog = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/div");
-    private final WebDriver driver;
     private final By groupsButton = By.xpath("//div[3]/div/nav/ul/li[4]/div/div/ul/li[1]/a");
     private  final By selectGroup = By.xpath("//*[@id=\"bodycontainer\"]/div/div[3]/div[1]/div[6]/div[2]/div/div/a");
     private final By joinGroup = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[2]/div[3]/div[2]/a");
     private  final By joinGroupButton = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[1]/form/div/a[1]");
     private final  By notification = By.xpath("//*[@id=\"header_notice_container\"]/div");
+
     private final By quotesButton = By.xpath("//*[@id=\"bodycontainer\"]/div/div[2]/div/header/div[3]/div/nav/ul/li[4]/div/div/ul/li[3]/a");
     private final By likeButton = By.id("add_quote_button8630");
     private final By viewQuote = By.xpath("//*[@id=\"quote_added8630\"]/div[1]/a");
     private final By myQuotes = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[2]/div[2]/div[4]/div[3]/div[2]/div[1]/a");
     private final By unLikeButton = By.xpath("//*[@id=\"bodycontainer\"]/div[3]/div[1]/div[2]/div[4]/div[3]/div/a");
+
+    private final By discussionButton = By.xpath("//*[@id=\"bodycontainer\"]/div/div[2]/div/header/div[3]/div/nav/ul/li[4]/div/div/ul/li[2]/a");
+    private final By newBookDiscussion = By.xpath("//div[1]/div[1]/div[2]/a");
+    private final By topicInput = By.id("topic_title");
+    private final By commentInput = By.id("comment_body_usertext");
+    private final By postButton = By.xpath("//*[@id=\"new_topic\"]/div[3]/div[2]/input");
+    private final By bookTopicInput = By.id("context_id_ac_1");
+
 
     // TODO: Create a constructor
     public P02_Community(WebDriver driver) {
@@ -141,4 +153,50 @@ public class P02_Community {
     public boolean assertQuotesPage() {
         return Objects.equals(driver.getCurrentUrl(), "https://www.goodreads.com/quotes/list/182014228");
     }
+
+    //TODO: Click on the discussion button
+    public P02_Community clickDiscussion() {
+        clickingOnElement(driver, discussionButton);
+        return this;
+    }
+
+    //TODO: Click on the new book discussion
+    public P02_Community clickNewBookDiscussion() {
+        clickingOnElement(driver, newBookDiscussion);
+        return this;
+    }
+
+    // TODO: Enter the book topic
+    public P02_Community enterBookTopic(String bookTopic) throws InterruptedException {
+        driver.findElement(bookTopicInput).sendKeys(bookTopic);
+        Thread.sleep(2000);
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(driver -> Objects.requireNonNull(driver.findElement(bookTopicInput).getAttribute("value")).contains(bookTopic));
+        driver.findElement(bookTopicInput).sendKeys(Keys.ENTER);
+        return this;
+    }
+
+    // TODO: Enter the topic
+    public P02_Community enterTopic(String topic) {
+        enterData(driver, topicInput, topic);
+        return this;
+    }
+
+    // TODO: Enter the comment
+    public P02_Community enterComment(String comment) {
+        enterData(driver, commentInput, comment);
+        return this;
+    }
+
+    // TODO: Click on the post button
+    public void clickPost() {
+        clickingOnElement(driver, postButton);
+    }
+
+    // TODO: Assert the discussion is posted and check the URL if it contains the topic
+    public boolean assertDiscussion() {
+        return Objects.requireNonNull(driver.getCurrentUrl()).contains("https://www.goodreads.com/topic/show");
+    }
+
 }
+
+

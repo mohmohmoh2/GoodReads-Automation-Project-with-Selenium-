@@ -5,5 +5,3 @@
 ##### TestNG
 ##### POM
 ##### Github Pipelines
-#### 
-#### 

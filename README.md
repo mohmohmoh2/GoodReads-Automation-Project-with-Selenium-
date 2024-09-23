@@ -1,4 +1,9 @@
-# GoodReads-Automation-Project-with-Selenium-
-GoodReads Automation Project with Selenium &amp; TestNG
+# GoodReads Automation Project with Selenium &amp; TestNG
 
-### Selenium
+### Techniques That I Used
+#### Selenium
+#### TestNG
+#### POM
+#### Github Piplines
+#### 
+#### 
